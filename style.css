@@ -1,0 +1,156 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box ;
+}
+.container
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    max-width: 1200px;
+    margin:0px auto ;
+    gap: 20px;
+    padding: 50px; 
+    
+}
+.card-purpule,
+.card-grey,
+.card-white1,
+.card-white2,
+.card-dark
+{
+    transition: all 0.3s ease;
+    
+
+}
+.card-purpule:hover,
+.card-grey:hover,
+.card-white1:hover,
+.card-white2:hover,
+.card-dark:hover
+{
+    transform: scale(1.1)
+    translateY(-5px);
+
+
+
+}
+
+body
+{
+    font-family: "Barlow semi condensed",sans-serif;
+    padding: 2rem;
+    background-color: hsl(214, 17%, 92%);
+    line-height: 1.4;
+    font-size: 13px;
+    
+}
+.card-purpule
+{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(263, 55%, 52%);
+    color: white;
+    width: 100%;
+    grid-column: span 2;
+    grid-row: span 1;
+    box-shadow: 4px 5px 10px rgba(0,0,0,0.15);
+
+
+}
+.card-grey
+{
+    border-radius: 10px;
+    padding: 20px;
+    background-color: hsl(217, 19%, 35%);
+    color: white;
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+    box-shadow: 4px 5px 10px rgba(0, 0, 0, 0.10);
+
+}
+.card-white1
+{
+    border-radius: 10px;
+     padding: 20px;
+    background-color: white;
+    color:hsl(217, 19%, 35%); 
+    width: 100%;
+    grid-row: span 2;
+    grid-column: span 1;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.10);
+
+
+        
+
+
+}
+.card-white2 {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+    color: hsl(217, 19%, 35%);
+    width: 100%;
+    grid-column: span 1;
+    grid-row: span 1;
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.10);
+
+
+
+
+}
+.card-dark
+{
+    border-radius: 10px;
+        padding: 20px;
+        background-color: hsl(219, 29%, 14%);
+        color: white;
+        width: 100%;
+        grid-column: span 2;
+        grid-row: span 1;
+        box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.15);
+
+}
+.card-profile
+{
+    display: flex;
+    align-items:center ;
+    gap: 12px;
+    
+}
+.card-profile img
+{
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+
+}
+.card-profile span
+{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+
+}
+.content p
+{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.content p strong
+{
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+
+
+}
+.content p small
+{
+    font-size: 0.9rem;
+    line-height: 1.5;
+    opacity: 0.6;
+
+}
